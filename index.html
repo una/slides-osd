@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>A Conversation on Open Source Design</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,18 +9,21 @@
 </head>
 <body class="list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Open Source Design</h1>
+		<p>@una</p>
 	</header>
 	<section class="slide cover" id="Cover"><div>
 		<h2>Open Source Design</h2>
-		<p>A chat by you and <a href="http://twitter.com/una">@una</a></p>
-		<img src="img/cover.jpg" alt="">
+		<p>A conversation, mediated by <a href="http://twitter.com/una">@una</a></p>
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
 			-->
 		<style>
+			#Cover {
+				background: linear-gradient(to top, rgba(0,0,0,0),  rgba(0,0,0,1)), url("img/the-desk.jpg");
+				background-size: cover;
+			}
 			#Cover h2 {
 				margin:30px 0 0;
 				color:#FFF;
@@ -40,15 +43,50 @@
 		</style>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Shower Key Features</h2>
+		<h2>OS vs FOSS</h2>
+		</div></section>
+	<section class="slide"><div>
+		<style>
+			dt {
+				font-weight: 900;
+				font-size: 1.2em;
+				color: #52a2df;
+				margin-bottom: -.5em;
+			}
+		</style>
+		<h2>Defining "Open Source Design"</h2>
+		<dl>
+			<dt class="next">Designing In The Open</dt>
+			<dd class="next">Showing design progress in the open, or "designing out loud." </dd>
+			<dt class="next">Designing Free Resources</dt>
+			<dd class="next">Creating resources that are free for others.</dd>
+			<dt class="next">Designing for Open Source Projects</dt>
+			<dd class="next">Working in conjunction with developers on open source projects.</dd>
+		</dl>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Goal: Foster Design Participation in the Open Source Community</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>All modern browsers are supported</li>
-			<li>Slide themes are separated from engine</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
+			<li>Increase understanding of the importance of design</li>
+			<li>Improve communication lapses</li>
+			<li>Provide easy open source project discovery</li>
+			<li>Provide easy designer discovery</li>
+			<li>Figure out a lucid workflow for everyone</li>
 		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+<!-- 		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+ -->	</div></section>
+	<section class="slide cover" id="Picture"><div>
+		<h2>Lower the Barrier to Entry for Designers</h2>
+		<style>
+			#Picture {
+				background: linear-gradient(to top, rgba(0,0,0,0),  rgba(0,0,0,1)), url("img/on-the-table.jpg");
+				background-size: cover;
+			}
+			#Picture h2 {
+				color:#FFF;
+				text-align: center;
+				}
+		</style>
 	</div></section>
 	<section class="slide"><div>
 		<h2>Plain Text on Your Slides</h2>
@@ -126,15 +164,7 @@
 		</table>
 		<p>It’s good to have information organized.</p>
 	</div></section>
-	<section class="slide cover" id="Picture"><div>
-		<h2>Pictures</h2>
-		<img src="img/picture.jpg" alt="">
-		<style>
-			#Picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</div></section>
+
 	<section class="slide shout"><div>
 		<h2>You can even shout this way</h2>
 	</div></section>
@@ -162,15 +192,12 @@
 				height:0.72em;
 				}
 		</style>
-	</div></section>
-	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
-	<!--
+	</div></section>	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
 		-->
 	<div class="progress"><div></div></div>
 	<script src="shower/shower.min.js"></script>
 	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>
