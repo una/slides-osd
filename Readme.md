@@ -1,57 +1,30 @@
-# Shower HTML presentation engine
-
-Follow [@shower_me](https://twitter.com/shower_me) for support and updates
-
-To see Shower in action:
-
-- Open [shwr.me](http://shwr.me/)
-- Click any slide to enter presentation mode
-- Use arrow keys or presenter remote to navigate
-- Press `Esc` to exit presentation mode
-
-See [Wiki](https://github.com/shower/shower/wiki) for more information how to use Shower.
-
-## Using Shower
-
-There are two ways of making presentation using Shower: you can just download an archive with all you need or you can install needed Shower modules using [npm](https://www.npmjs.org) or [bower](http://bower.io).
-
-### Simple Way
-
-In a simple way you just download the latest Shower version with built-in themes and use it.
-
-1. Download and unarchive [shower.zip](http://shwr.me/shower.zip)
-2. Open `index.html` in any code or text editor, edit your slides in HTML
-3. Use `pictures` folder for pictures used in presentation
-4. Once finished, open `index.html` in a browser, enter full screen and start presenting
-
-### Advanced Way
-
-Advanced way allows you to manually install needed Shower packages and requires [Node.js](http://nodejs.org/) installed together with package managment system: `npm` or `bower`.
-
-1. Run `npm install shower-core shower-ribbon`
-2. Link core and theme files in `node_modules` folder to your presentation file
-3. You’re probably know what to do next, it’s an advanced way.
-
-**Note:** you can use `bower` instead of `npm` or `shower-bright` instead of `shower-ribbon` in command above to install Shower using Bower or get Bright theme.
-
-## Usage examples
-
-- [Clear and Sharp](http://pepelsbey.net/pres/clear-and-sharp/)
-- [CSS Management](http://pepelsbey.net/pres/knife-train/)
-- [Push it!](http://pepelsbey.net/pres/push-it/)
-- [Pre-fixes](http://pepelsbey.net/pres/pre-fixes/)
-- [Web In Curves](http://pepelsbey.net/pres/web-in-curves/)
-- [Sense Coding](http://pepelsbey.net/pres/sense-coding/)
-
-## Browser support
-
-Latest stable versions of Chrome, Internet Explorer, Firefox, Opera and Safari are supported.
-
-## Contributing
-
-You’re always welcome to contibute. Fork project, make changes and send it as pull request. But it’s better to file an [issue](https://github.com/shower/shower/issues) with your idea first. Read [contributing rules](https://github.com/shower/shower/blob/master/Contributing.md) for more details.
-
-Main contributors: [pepelsbey](https://github.com/pepelsbey), [jahson](https://github.com/jahson), [miripiruni](https://github.com/miripiruni), [kizu](https://github.com/kizu), [artpolikarpov](https://github.com/artpolikarpov), [tonyganch](https://github.com/tonyganch).
-
+Starter Environment
 ---
-Licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License), see [license page](https://github.com/shower/shower/wiki/MIT-License) for details.
+
+What's set up here:
+
+- Sass (LibSass)
+- Autoprefixer
+- CSS Minification
+- JSHint
+- Scss Lint (based on [this](https://github.com/causes/scss-lint/blob/master/config/default.yml) config)
+- HTML Minification
+- BrowserSync
+
+## To Get Started:
+
+1. Install node and make sure npm (Node Project Manager) is also [installed](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
+2. Clone this repo with `git clone https://github.com/una/gulp-starter-env` (in terminal) or download the zip
+3. In terminal, `cd` (change directory) to the folder containing your project. (i.e. if I start at ~ and I have a Dev folder on my Desktop containing this project, I might type `cd Desktop/Dev/gulp-starter-env`). Alternatively, type `cd` and drag the location of the folder into your terminal and hit enter.
+4. When inside the directory which contains this project in terminal, type `npm install`. If (and only if) you're having trouble with `npm install`, try `sudo npm install` -- this makes you act as a super user
+5. In the terminal, enter `gulp`
+6. Take note of the Access URLs provided in your terminal. Your web page should pop up at `http://localhost:3000`. You can access this same page on your various devices in the same wifi network with the provided External URL. You can share the External URL with coworkers and they'll see whats on your screen.
+7. Edit your Sass code inside of the scss folder. You can make subfolders inside of that to better organize your code. Prefix your sass files with an underscore. More info on using @import to organize your files [here](http://sass-guidelin.es/#main-file)
+8. Your minified files will be automatgically created and updated in `dist/`. It will create your optimized css, html, and javascript files for you. Never edit files within the `dist/` folder. (Dist stands for Distribution)
+9. Keep gulp running while you're making changes. When you want to close out of the gulp task, in the terminal, hit `ctrl + C`
+
+## Linting
+
+File Linting is where you read your file to make sure that your code conforms to standards. You should be doing this continuously.
+
+If you're using a text editor like Sublime, I'd recommend installing `SublimeLinter` and `SublimeLinter-contrib-scss-lint`. You can also lint with gulp inside of your terminal by running `gulp scss-lint`. Note: You need to have ruby installed to do this.
