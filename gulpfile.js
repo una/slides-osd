@@ -13,7 +13,13 @@ var gulp        = require('gulp'),
     minifyHTML  = require('gulp-minify-html'),
     size        = require('gulp-size'),
     imagemin    = require('gulp-imagemin'),
+    deploy      = require('gulp-gh-pages'),
     pngquant    = require('imagemin-pngquant');
+
+gulp.task('deploy', function () {
+    return gulp.src('dist/**/*')
+        .pipe(deploy());
+});
 
 gulp.task('scss', function() {
   return gulp.src('scss/main.scss')
