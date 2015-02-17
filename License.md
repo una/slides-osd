@@ -1,4 +1,4 @@
-# The MIT License
+# The MIT License for Shower
 
 Copyright © 2010–2014 Vadim Makeev, http://pepelsbey.net/
 
